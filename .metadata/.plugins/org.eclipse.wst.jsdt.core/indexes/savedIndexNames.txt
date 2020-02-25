@@ -1,8 +1,7 @@
 INDEX VERSION 1.4+C:\Users\llssk\OneDrive\πŸ≈¡ »≠∏È\study_JSP_suvlet\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2542340097.index
-2063126071.index
-2757958381.index
-787115857.index
-1460099810.index
 2349851073.index
-166665443.index
+2757958381.index
+1460099810.index
+2063126071.index
+2542340097.index
+787115857.index
