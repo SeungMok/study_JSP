@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 7 elements from project &apos;inflearn_JSP&apos;&#x0D;&#x0A;- Original project: &apos;inflearn_JSP&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     requestObject.jsp&#x0D;&#x0A;     requestParameter.jsp&#x0D;&#x0A;     test_age.jsp&#x0D;&#x0A;     test_ng.jsp&#x0D;&#x0A;     test_pass.jsp&#x0D;&#x0A;     testAge_request.html&#x0D;&#x0A;     web.xml" description="Delete elements" element1="WebContent/WEB-INF/requestParameter.jsp" element2="WebContent/WEB-INF/testAge_request.html" element3="WebContent/WEB-INF/test_pass.jsp" element4="WebContent/WEB-INF/requestObject.jsp" element5="WebContent/WEB-INF/web.xml" element6="WebContent/WEB-INF/test_age.jsp" element7="WebContent/WEB-INF/test_ng.jsp" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="7" stamp="1583235418618" subPackages="false" version="1.0"/>
+</session>

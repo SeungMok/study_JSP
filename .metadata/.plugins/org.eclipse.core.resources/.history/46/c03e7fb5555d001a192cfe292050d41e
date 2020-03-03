@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<%!
+		String id,pw;
+	%>
+	
+	<%
+		id = request.getParameter("id");
+		pw = request.getParameter("pw");
+		
+		if(id.equals("test") && pw.equals("1234")){
+			Cookie cookie = new Cookie("id",id);
+			cookie.setMaxAge(60);
+			response.addCookie(cookie);
+			response.sendRedirect("login_success.jsp");
+		}
+		else
+			response.sendRedirect("login_form.jsp");
+	%>
+	
+	<a href="cookieState.jsp">쿠키 현상황</a>
+</body>
+</html>
