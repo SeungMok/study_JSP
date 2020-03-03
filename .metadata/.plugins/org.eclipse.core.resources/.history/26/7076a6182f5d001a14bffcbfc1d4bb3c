@@ -28,7 +28,7 @@
 </br>
 <h1>gugudan.jsp 페이지 입니다.</h1>
 <%@ include file="gugudan.jsp" %>
-<jsp:include page="gugudan.jsp" />
+<jsp:include page="gugudan.jsp" >
 <h1>다시 jsp_ex 페이지 입니다.</h1>
  표현식(expression) </br>
 <%=i %></br>
