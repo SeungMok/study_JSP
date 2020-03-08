@@ -1,3 +1,4 @@
+<%@page import="java.util.Enumeration"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -7,8 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+	<!--	Cookie 사용 	-->
 	<%
-		Cookie[] cookies = request.getCookies();
+	/* 	Cookie[] cookies = request.getCookies();
 	
 		for(int i = 0 ; i < cookies.length; i++){
 			if(cookies[i].getValue().equals("test")){
@@ -17,7 +20,19 @@
 			}
 		}
 		
-		response.sendRedirect("login_cookieState.jsp");
+		response.sendRedirect("login_cookieState.jsp"); 
+	*/
+	%>
+	
+	<!--  Session 사용 -->
+	<%
+		session.invalidate();
+		if(request.isRequestedSessionIdValid()){
+			out.println("session valid");
+		}
+		else{
+			out.println("session invalid");
+		}
 	%>
 </body>
 </html>

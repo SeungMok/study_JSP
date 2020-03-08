@@ -15,15 +15,23 @@
 	<%
 		id = request.getParameter("id");
 		pw = request.getParameter("pw");
-		
+
+/*		Cookie사용
 		if(id.equals("test") && pw.equals("1234")){
+		
 			Cookie cookie = new Cookie("id",id);
 			cookie.setMaxAge(60);
 			response.addCookie(cookie);
+*/	
+		//session사용
+
+		if(id.equals("test") && pw.equals("1234")){
+ 			session.setAttribute("id", id);
 			response.sendRedirect("login_success.jsp");
 		}
-		else
+		else{
 			response.sendRedirect("login_form.html");
+		}
 	%>
 </body>
 </html>

@@ -1,3 +1,4 @@
+<%@page import="java.util.Enumeration"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -13,14 +14,31 @@
 <body>
 	
 	<h1>로그인 성공</h1></br>
+	
+	<!-- cookie 사용 -->
 	<%
+	/* 
 	Cookie[] cookies = request.getCookies();
 	for(int i = 0 ; i < cookies.length; i++){
 		if(cookies[i].getValue().equals("test")){
 			out.println(cookies[i].getValue()+ "님 안녕하세요</br>");
 		}
-	}
+	} */
 	%>
+
+	
+	<!-- Session 사용-->
+	<%
+		Enumeration enmueration = session.getAttributeNames();
+		while(enmueration.hasMoreElements()){
+			String sName = enmueration.nextElement().toString();
+			String sValue = session.getAttribute(sName).toString();
+			if(sValue.equals("test"))
+				out.println(sValue+"님 환영합니다.");
+		}
+		
+	%>
+	
 	<a href="login_cookiState.jsp">쿠키확인</a>
 	<a href="login_cookieDelete.jsp">쿠키삭제</a>
 </body>
